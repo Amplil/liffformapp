@@ -12,46 +12,47 @@
     <form class="w-75 mx-auto">
         <p class="mt-3">お名前</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="1" placeholder="" required>
         </div>
         <p class="mt-3">生まれた年</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="2" placeholder="" required>
         </div>
         <p class="mt-3">生まれた月</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="3" placeholder="" required>
         </div>
         <p class="mt-3">生まれた日</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="4" placeholder="" required>
         </div>
         <p class="mt-3">占いたい人の星座は何ですか？</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="5" placeholder="" required>
         </div>
         <p class="mt-3">こういう機能があったらまた使いたいですか？</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="6" placeholder="" required>
         </div>
         <p class="mt-3">自分がどういう状況の時にこういったものを使いたいと思うと思いますか？</p>
         <div>
-            <input class="form-control w-100 mt-1" name="udetate" required>
+            <input class="form-control w-100 mt-1" name="7" required>
         </div>
         <p class="mt-3">占いで一回あたりいくら使った時ありますか？</p>
         <div>
-            <input class="form-control w-100 mt-1" name="fukkin" required>
+            <input class="form-control w-100 mt-1" name="8" required>
         </div>
         <p class="mt-3">電話番号　※サービスローンチ前のキャンペーン施策で十件に一回詳しい鑑定結果をお送りしますのでご連絡差し上げる場合があります。</p>
         <div>
-            <input class="form-control w-100 mt-1" name="haikin" required>
+            <input class="form-control w-100 mt-1" name="9" required>
         </div>
         <p class="mt-3">※女性限定amazonギフト券など欲しいですか？ 占いの利用者が女性多数のため女性限定にさせていただきます。30分程度サービスの使用感など詳しいインタビューに答えてくださった方にプレゼントを考えております。</p>
         <div>
+            <input class="form-control w-100 mt-1" name="10" required>
         </div>
         <p class="mt-3">コメント自由記述</p>
         <div>
-            <input class="form-control w-100 mt-1" name="sukuwat" required>
+            <input class="form-control w-100 mt-1" name="11" required>
         </div>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
@@ -94,11 +95,17 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
+                const text1    = $('input[name="1"]').val();
+                const text2 = $('input[name="2"]').val();
+                const text3  = $('input[name="3"]').val();
+                const text4  = $('input[name="4"]').val();
+                const text5 = $('input[name="5"]').val();
+                const text6 = $('input[name="6"]').val();
+                const text7  = $('input[name="7"]').val();
+                const text8  = $('input[name="8"]').val();
+                const text9 = $('input[name="9"]').val();
+                const text10 = $('input[name="10"]').val();
+                const text11  = $('input[name="11"]').val();
                 
                 const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
                 sendText(msg);
