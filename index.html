@@ -26,6 +26,10 @@
         <div>
             <input class="form-control w-100 mt-1" name="4" placeholder="" required>
         </div>
+        <p class="mt-3">生まれた時刻</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="4_" placeholder="" required>
+        </div>
         <p class="mt-3">占いたい人の星座は何ですか？</p>
         <div>
             <input class="form-control w-100 mt-1" name="5" placeholder="" required>
@@ -99,6 +103,7 @@
                 const text2 = $('input[name="2"]').val();
                 const text3  = $('input[name="3"]').val();
                 const text4  = $('input[name="4"]').val();
+                const text4_  = $('input[name="4"]').val();
                 const text5 = $('input[name="5"]').val();
                 const text6 = $('input[name="6"]').val();
                 const text7  = $('input[name="7"]').val();
@@ -107,7 +112,7 @@
                 const text10 = $('input[name="10"]').val();
                 const text11  = $('input[name="11"]').val();
                 
-                const msg = `${text1}\n${text2}\n${text3}\n${text4}\n${text5}\n${text6}\n${text7}\n${text8}\n${text9}\n${text10}\n${text11}`;
+                const msg = `${text1}\n${text2}\n${text3}\n${text4}\n${text4_}\n${text5}\n${text6}\n${text7}\n${text8}\n${text9}\n${text10}\n${text11}`;
                 sendText(msg);
 
                 return false;
